@@ -5,10 +5,6 @@ const Loading = () => {
     <h1
       style={{ marginBlock: "9rem", display: "flex", justifyContent: "center" }}
     >
-      {" "}
-      <div class="lds-ripple"><div></div><div></div></div>
-    </h1>
-  );
-};
+    <div class="lds-ripple"><div></div><div></div></div>
 
 export default Loading;

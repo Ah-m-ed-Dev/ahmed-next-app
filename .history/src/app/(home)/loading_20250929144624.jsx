@@ -1,4 +1,8 @@
-
+import React from "react";
+import "./loading.css";
+const Loading = () => {
+  return (
+   
 .lds-ripple,
 .lds-ripple div {
   box-sizing: border-box;
@@ -50,3 +54,7 @@
   }
 }
 
+
+
+export default Loading;
+ style={{ marginBlock: "9rem", display: "flex", justifyContent: "center" }}
