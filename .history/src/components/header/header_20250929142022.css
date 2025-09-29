@@ -84,8 +84,8 @@ header.flex .fa-bag-shopping {
   }
 
   header.flex .logo {
+    text-align: center;
     
-    display: none;
   }
 }
 

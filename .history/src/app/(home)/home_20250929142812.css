@@ -75,7 +75,7 @@ div.top-img {
   
   @media (width < 600px) {
     main h1.recommended {
-      margin: 2.3rem 0 2rem 25px;
+      margin: 2.3rem 0 2rem 0;
       font-size: 1.4rem;
     }
   }
