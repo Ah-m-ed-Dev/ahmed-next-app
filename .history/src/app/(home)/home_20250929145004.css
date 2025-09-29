@@ -9,7 +9,7 @@ div.top-img {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
+    text-align: center;
   }
   
   @media (width < 1000px) {
@@ -102,7 +102,6 @@ div.top-img {
   
      img {
       border-radius: 5px 5px 0 0;
-      margin-left: 18%;
     }
   
      .card .content {
