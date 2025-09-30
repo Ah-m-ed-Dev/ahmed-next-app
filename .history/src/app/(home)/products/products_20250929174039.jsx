@@ -1,6 +1,4 @@
 import React from "react";
-import Link from 'next/link';
-
 
 // const arr = [
 //   { productImg: "./images/1.png" },
@@ -35,9 +33,9 @@ const Products = async () => {
       {arrData.map((item) => {
         return (
           <article title={item.title} key={item.id} className="card">
-            <Link href={`/product-details/${item.id}` }>
+            <link href={'/product-details/$'}>
               <img width={200} height={200} src={item.productImg} alt="" />
-            </Link>
+            </link>
             <div style={{ width: "266px" }} className="content">
               <h1 className="title">{item.title.slice(0, 10)}...</h1>
               <p className="description">{item.description.slice(0, 100)}</p>

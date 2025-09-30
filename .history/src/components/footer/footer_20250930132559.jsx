@@ -6,8 +6,9 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
+      <a href=""></a>
     Designed and developed by
-    <span> <a href="https://web.facebook.com/ahmed.khalil.361214">Ahmed Khalil</a>  </span>© 2025.
+    <span> Ahmed Khalil </span>© 2025.
   </footer>
   );
 }

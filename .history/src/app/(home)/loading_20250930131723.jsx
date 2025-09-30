@@ -6,7 +6,7 @@ const Loading = () => {
       style={{ marginBlock: "9rem", display: "flex", justifyContent: "center" }}
     >
       {" "}
-      <div className="lds-ripple"><div></div><div></div></div>
+      <div className=""="lds-ripple"><div></div><div></div></div>
     </h1>
   );
 };

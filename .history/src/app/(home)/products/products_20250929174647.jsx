@@ -1,7 +1,5 @@
 import React from "react";
-import Link from 'next/link';
-
-
+import
 // const arr = [
 //   { productImg: "./images/1.png" },
 //   { productImg: "./images/2.webp" },

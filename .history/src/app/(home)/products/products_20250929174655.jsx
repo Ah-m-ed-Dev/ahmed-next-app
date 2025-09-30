@@ -1,8 +1,5 @@
 import React from "react";
-import Link from 'next/link';
-
-
-// const arr = [
+import <link rel="styleshe />// const arr = [
 //   { productImg: "./images/1.png" },
 //   { productImg: "./images/2.webp" },
 //   { productImg: "./images/3.webp" },
