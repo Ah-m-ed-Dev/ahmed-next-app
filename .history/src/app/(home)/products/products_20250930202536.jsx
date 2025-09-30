@@ -1,7 +1,8 @@
 import React from "react";
 import Link from 'next/link';
 
-const arr =  [
+{
+  "products": [
     {
       "id": "1",
       "productImg": "./images/1.png",
@@ -59,12 +60,28 @@ const arr =  [
       "price": 14.99
     }
   ]
+}
 
-const products = () => {
- 
+async function getData() {
+  const res = await fetch("http://localhost:4000/products", {
+    next: { revalidate: 0 },
+  });
+
+  if (!res.ok) {
+    throw new Error("failed to fetch data");
+  }
+  return res.json();
+}
+
+const Products = async () => {
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
+
+  const arrData = await getData();
+  
+
   return (
     <section className="products flex">
-      {arr.map((item) => {
+      {arrData.map((item) => {
         return (
           <article title={item.title} key={item.id} className="card">
             <Link href={`/product-details/${item.id}` }>
@@ -94,4 +111,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default Products;

@@ -1,6 +1,5 @@
 import React from "react";
 import Link from 'next/link';
-
 const arr =  [
     {
       "id": "1",
@@ -59,7 +58,7 @@ const arr =  [
       "price": 14.99
     }
   ]
-
+}
 const products = () => {
  
   return (
@@ -94,4 +93,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default Products;

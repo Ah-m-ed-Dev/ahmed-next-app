@@ -1,7 +1,8 @@
 import React from "react";
 import Link from 'next/link';
 
-const arr =  [
+{
+  "products": [
     {
       "id": "1",
       "productImg": "./images/1.png",
@@ -59,7 +60,7 @@ const arr =  [
       "price": 14.99
     }
   ]
-
+}
 const products = () => {
  
   return (
@@ -94,4 +95,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default Products;
