@@ -1,27 +1,11 @@
 import Footer from "@/components/footer/footer"; 
-import { products } from '../../(home)/products/products';
-import { arr } from '../../(home)/products/products';
+
 import Header from "@/components/header/header";
 import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
-async function getData(iddd) {
-  
 
-  const product = arr.find((item) => item.id === iddd);
-
-  if (!product) {
-    throw new Error("Product not found");
-  }
-
-  return product;
-}
-
-const Page = async ({ params }) => {
-  const objData = await getData(params.id);
-
-  
   return (
     <div
       style={{

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link';
 
-export const arr =  [
+const arr =  [
     {
       "id": "1",
       "productImg": "./images/1.png",
@@ -60,7 +60,7 @@ export const arr =  [
     }
   ]
 
-const Products = () => {
+const ؛roducts = () => {
  
   return (
     <section className="products flex">
@@ -94,4 +94,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default products;

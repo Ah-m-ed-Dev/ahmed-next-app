@@ -6,3 +6,8 @@
   }
 }
 
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  }
+}

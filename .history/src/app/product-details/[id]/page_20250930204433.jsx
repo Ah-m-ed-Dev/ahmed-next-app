@@ -1,15 +1,14 @@
 import Footer from "@/components/footer/footer"; 
-import { products } from '../../(home)/products/products';
-import { arr } from '../../(home)/products/products';
+import pro
 import Header from "@/components/header/header";
 import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 async function getData(iddd) {
-  
+  // ابحث عن المنتج بالمطابقة مع الـ id
+  const product = product.find((item) => item.id === iddd);
 
-  const product = arr.find((item) => item.id === iddd);
 
   if (!product) {
     throw new Error("Product not found");
@@ -21,7 +20,7 @@ async function getData(iddd) {
 const Page = async ({ params }) => {
   const objData = await getData(params.id);
 
-  
+
   return (
     <div
       style={{

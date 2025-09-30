@@ -1,27 +1,27 @@
 import Footer from "@/components/footer/footer"; 
-import { products } from '../../(home)/products/products';
-import { arr } from '../../(home)/products/products';
+
 import Header from "@/components/header/header";
 import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 async function getData(iddd) {
-  
+  const res = await fetch(`http://localhost:4000/products/${iddd}`);
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
 
-  const product = arr.find((item) => item.id === iddd);
-
-  if (!product) {
-    throw new Error("Product not found");
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error("Failed to fetch data");
   }
 
-  return product;
+  return res.json();
 }
 
 const Page = async ({ params }) => {
   const objData = await getData(params.id);
-
   
+
   return (
     <div
       style={{

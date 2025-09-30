@@ -1,7 +1,7 @@
 import React from "react";
 import Link from 'next/link';
 
-export const arr =  [
+const arr =  [
     {
       "id": "1",
       "productImg": "./images/1.png",
@@ -60,14 +60,14 @@ export const arr =  [
     }
   ]
 
-const Products = () => {
- 
+function Products() {
+
   return (
     <section className="products flex">
       {arr.map((item) => {
         return (
           <article title={item.title} key={item.id} className="card">
-            <Link href={`/product-details/${item.id}` }>
+            <Link href={`/product-details/${item.id}`}>
               <img width={200} height={200} src={item.productImg} alt="" />
             </Link>
             <div style={{ width: "266px" }} className="content">
@@ -77,7 +77,7 @@ const Products = () => {
                 className="flex"
                 style={{
                   justifyContent: "space-between",
-                  paddingBottom: "0.7rem",
+                  paddingBottom: "0.7rem"
                 }}
               >
                 <div className="price">${item.price}</div>
@@ -92,6 +92,6 @@ const Products = () => {
       })}
     </section>
   );
-};
+}
 
-export default Products;
+export default products;

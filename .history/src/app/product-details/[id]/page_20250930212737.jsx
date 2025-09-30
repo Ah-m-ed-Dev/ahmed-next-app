@@ -1,6 +1,6 @@
 import Footer from "@/components/footer/footer"; 
 import { products } from '../../(home)/products/products';
-import { arr } from '../../(home)/products/products';
+
 import Header from "@/components/header/header";
 import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
