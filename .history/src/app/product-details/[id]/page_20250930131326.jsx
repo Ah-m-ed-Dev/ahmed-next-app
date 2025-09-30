@@ -1,6 +1,6 @@
 import Footer from "@/components/footer/footer"; 
 
-import Header from "@/components/header/header";
+import Header from "@/components/Header/Header";
 import "./product-details.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
